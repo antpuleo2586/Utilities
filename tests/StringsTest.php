@@ -12,7 +12,9 @@ class StringsTest extends TestCase
      */
     public function testContainsEmoji()
     {
-        $this->assertTrue(Strings::containsEmoji('🌐'));
+        $this->assertTrue(Strings::containsEmoji('☻'));
+        $this->assertTrue(Strings::containsEmoji('☔'));
+        $this->assertTrue(Strings::containsEmoji('⚉'));
 
         $this->assertFalse(Strings::containsEmoji('a'));
         $this->assertFalse(Strings::containsEmoji('ß'));
@@ -20,6 +22,9 @@ class StringsTest extends TestCase
         $this->assertFalse(Strings::containsEmoji('1'));
         $this->assertFalse(Strings::containsEmoji('@'));
         $this->assertFalse(Strings::containsEmoji('æ'));
+        $this->assertFalse(Strings::containsEmoji('ຈ'));
+        $this->assertFalse(Strings::containsEmoji('ᄤ'));
+        $this->assertFalse(Strings::containsEmoji('ከ'));
     }
 
     /**

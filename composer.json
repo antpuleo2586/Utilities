@@ -1,15 +1,15 @@
 {
-    "autoload": {
-        "psr-4": {
-            "Ant\\Utilties\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Ant\\Utilties\\Tests\\": "tests/"
-        }
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^5.7"
+  "autoload": {
+    "psr-4": {
+      "Ant\\Utilities\\": "src/"
     }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.7"
+  }
 }
